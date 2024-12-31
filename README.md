@@ -62,7 +62,7 @@ This looks up `formData["faq:question"].value`.
 
 ### Ternaries
 
-Use ternary or nullish coalescing (??) operators inline:
+Use ternary or nullish coalescing (`??`) operators inline:
 
 ```
 {
@@ -82,7 +82,9 @@ You can also use standard JS ternary style:
 
 Check for equality directly in your template:
 
+```
 "{{ person.name == 'Jeremy' }}"
+```
 
 This will evaluate to a boolean: `true` or `false`.
 

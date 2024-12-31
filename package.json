@@ -1,0 +1,29 @@
+{
+  "name": "@rouxbot/json-templates",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "git@github.com:azulus/json-templates.git",
+  "author": "Jeremy Stanley <git@azulus.com>",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.10.2",
+    "rollup": "^4.29.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node --test tests/basic.spec.js"
+  }
+}
